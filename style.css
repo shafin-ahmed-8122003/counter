@@ -1,0 +1,65 @@
+:root {
+    --black: #333333;
+    --white: #f0f0f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
+    user-select: none;
+}
+
+body {
+    background-color: var(--black);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--white);
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    flex: 1;
+    margin-inline: 5px;
+    height: 40px;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px var(--black);
+    transition: 200ms;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttons button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.buttons button:nth-child(2n + 1) {
+    color: white;
+}
+
+#decrement {
+    background-color: crimson;
+}
+
+#increment {
+    background-color: cornflowerblue;
+}
